@@ -45,7 +45,7 @@ function Navbar() {
           </ul>
         </div>
 
-        <button className="rounded-full bg-orange-400 p-3 text-white shadow-xl">
+        <button className="rounded-full bg-orange-400 px-6 py-3 text-white shadow-xl">
           <span>Get started</span>
         </button>
       </nav>
