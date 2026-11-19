@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar/Navbar";
 import tabletImg from "./assets/images/bg-tablet-pattern.svg";
+import Hero from "./components/Hero/Hero";
 
 export default function App() {
   return (
-    <div className="rellative min-h-screen bg-gray-50 bg-cover bg-center bg-no-repeat text-base">
+    <div className="relative min-h-screen bg-gray-50 bg-cover bg-center bg-no-repeat text-base">
       <img
         src={tabletImg}
         alt=""
@@ -12,7 +13,9 @@ export default function App() {
       />
       <div className="relative z-10">
         <Navbar />
-        <main></main>
+        <main className="mx-auto w-6xl">
+          <Hero />
+        </main>
       </div>
     </div>
   );

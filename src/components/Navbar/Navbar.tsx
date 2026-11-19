@@ -1,4 +1,5 @@
 import logo from "../../assets/images/logo.svg";
+import Button from "../../Ui/Button";
 
 interface NavLink {
   name: string;
@@ -30,7 +31,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="py-4">
+    <header className="overflow-hidden py-4">
       <nav className="mx-auto flex w-6xl items-center justify-between gap-4">
         <img src={logo} className="object-fit h-6" alt="manageLogo" />
         <div>
@@ -45,9 +46,7 @@ function Navbar() {
           </ul>
         </div>
 
-        <button className="rounded-full bg-orange-400 px-6 py-3 text-white shadow-xl">
-          <span>Get started</span>
-        </button>
+        <Button />
       </nav>
     </header>
   );
