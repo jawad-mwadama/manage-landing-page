@@ -38,12 +38,12 @@ export default function Overview() {
 
       {/* Right column: Numbered list */}
       <div className="flex w-full min-w-0 flex-col gap-8 md:w-1/2">
-        {overView.map((item) => (
+        {overView.map((overview) => (
           <OverviewText
-            key={item.number}
-            number={item.number}
-            title={item.title}
-            description={item.description}
+            key={overview.number}
+            number={overview.number}
+            title={overview.title}
+            description={overview.description}
           />
         ))}
       </div>

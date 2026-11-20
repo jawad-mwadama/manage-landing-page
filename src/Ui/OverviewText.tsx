@@ -10,6 +10,7 @@ export default function OverviewText({
   description,
 }: OverviewTextProps) {
   return (
+    // numbers with side texts
     <div className="flex w-full min-w-0 items-start gap-4">
       <span className="shrink-0 rounded-full bg-orange-400 px-6 py-3 font-bold text-white">
         {number}
