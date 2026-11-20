@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-gray-50 bg-cover bg-center bg-no-repeat text-base">
+    <div className="relative min-h-screen overflow-x-clip bg-gray-50 bg-cover bg-center bg-no-repeat text-base">
       <img
         src={tabletImg}
         alt=""
@@ -13,7 +13,7 @@ export default function App() {
       />
       <div className="relative z-10">
         <Navbar />
-        <main className="mx-auto w-6xl">
+        <main className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <Hero />
         </main>
       </div>

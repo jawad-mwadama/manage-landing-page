@@ -1,5 +1,5 @@
 import logo from "../../assets/images/logo.svg";
-import Button from "../../Ui/Button";
+import Button from "../../ui/Button";
 
 interface NavLink {
   name: string;
