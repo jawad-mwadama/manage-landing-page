@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import tabletImg from "./assets/images/bg-tablet-pattern.svg";
 import Hero from "./components/Hero/Hero";
 import Overview from "./components/Overview/Overview";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <main className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
           <Hero />
           <Overview />
+          <Testimonials />
         </main>
       </div>
     </div>
