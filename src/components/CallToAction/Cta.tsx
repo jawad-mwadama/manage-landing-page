@@ -7,7 +7,7 @@ export default function Cta() {
         <h3 className="mb-8 max-w-md text-3xl font-bold text-white sm:mb-0">
           Simplify how your team works today.
         </h3>
-        <Button />
+        <Button variant="secondary" />
       </div>
     </div>
   );

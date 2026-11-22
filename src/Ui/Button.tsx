@@ -1,9 +1,24 @@
-export default function Button() {
-  const base =
-    "hover cursor-pointer rounded-full bg-orange-400 px-6 py-3 text-white duration-300 ease-in-out hover:scale-90";
+type Variant = "primary" | "secondary";
 
+interface Variants {
+  primary: string;
+  secondary: string;
+}
+
+interface ButtonProps {
+  variant?: Variant;
+}
+
+export default function Button({ variant = "primary" }: ButtonProps) {
+  const base =
+    "hover cursor-pointer rounded-full px-5 py-3 duration-300 ease-in-out hover:scale-90";
+
+  const variants: Variants = {
+    primary: "bg-orange-400 text-white",
+    secondary: "bg-white text-orange-400 ",
+  };
   return (
-    <button className={`${base}`}>
+    <button className={`${base} ${variants[variant]}`}>
       <span>Get started</span>
     </button>
   );
