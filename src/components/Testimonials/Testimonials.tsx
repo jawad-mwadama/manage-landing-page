@@ -3,6 +3,7 @@ import avatarAnisha from "../../assets/images/avatar-anisha.png";
 import avatarRichard from "../../assets/images/avatar-richard.png";
 import avatarShanai from "../../assets/images/avatar-shanai.png";
 import Button from "../../ui/Button";
+import TestimonialHeader from "../../ui/TestimonialHeader";
 
 interface Testimonial {
   id: number;
@@ -48,9 +49,7 @@ export default function Testimonials() {
       {/* text side */}
       <div className="mt-20 mb-20 flex w-full flex-col items-center text-center md:mt-28 md:items-center md:text-center">
         <div className="mx-0 flex items-center justify-center p-2">
-          <h3 className="text-3xl font-bold tracking-wide text-blue-950 sm:text-3xl lg:text-4xl/14">
-            What They&apos;ve said
-          </h3>
+          <TestimonialHeader />
         </div>
       </div>
 

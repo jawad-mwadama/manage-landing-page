@@ -3,6 +3,7 @@ import tabletImg from "./assets/images/bg-tablet-pattern.svg";
 import Hero from "./components/Hero/Hero";
 import Overview from "./components/Overview/Overview";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Cta from "./components/CallToAction/Cta";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Overview />
         </main>
         <Testimonials />
+        <Cta />
       </div>
     </div>
   );
