@@ -45,7 +45,8 @@ const testimonialContent: Testimonial[] = [
 export default function Testimonials() {
   return (
     <section>
-      <div className="mt-20 flex w-full flex-col items-center text-center md:mt-28 md:items-center md:text-center">
+      {/* text side */}
+      <div className="mt-20 mb-20 flex w-full flex-col items-center text-center md:mt-28 md:items-center md:text-center">
         <div className="mx-0 flex items-center justify-center p-2">
           <h3 className="text-3xl font-bold tracking-wide text-blue-950 sm:text-3xl lg:text-4xl/14">
             What They&apos;ve said
@@ -53,12 +54,13 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className="mt-18 w-full flex-col justify-center gap-12 p-2 sm:flex md:flex-row">
+      {/* testimonial cards */}
+      <div className="mt-8 max-w-full flex-col justify-center gap-12 p-2 sm:flex md:flex-row lg:mt-12">
         {testimonialContent.map((testimonial) => {
           return (
             <div
               key={testimonial.id}
-              className="relative rounded-md bg-slate-300/20 text-center"
+              className="relative mt-18 rounded-md bg-slate-300/20 p-2 text-center md:mt-0"
             >
               <img
                 src={testimonial.avatarImg}
@@ -68,14 +70,16 @@ export default function Testimonials() {
               <span className="mt-8 block text-center font-bold text-blue-950">
                 {testimonial.avatarName}
               </span>
-              <p className="my-4 text-slate-400">
+              <p className="my-4 tracking-wide text-slate-400">
                 {testimonial.avatarTestimonial}
               </p>
             </div>
           );
         })}
       </div>
-      <Button />
+      <div className="mx-auto flex justify-center pt-12">
+        <Button />
+      </div>
     </section>
   );
 }
