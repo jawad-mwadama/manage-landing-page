@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Overview from "./components/Overview/Overview";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Cta from "./components/CallToAction/Cta";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         </main>
         <Testimonials />
         <Cta />
+        <Footer />
       </div>
     </div>
   );
