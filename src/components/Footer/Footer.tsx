@@ -32,10 +32,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-blue-950 text-white">
-      <div className="mx-auto flex w-full max-w-6xl flex-col px-4 py-12 sm:flex-row sm:px-6 lg:px-8">
+      <div className="flex w-full max-w-6xl flex-col items-center gap-12 px-4 py-6 sm:flex-row sm:gap-0 sm:px-6 md:mx-auto md:justify-between lg:px-8">
         {/* logo and  socials side */}
         <div className="flex flex-col gap-[8vw]">
-          <span>
+          <span className="rounded-lg bg-white px-2 pt-2">
             <img src={logo} alt="" />
           </span>
 
@@ -48,33 +48,57 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* footer links */}
-        <ul className="flex flex-col gap-3">
-          {navLinks.map((navLink) => (
-            <li key={navLink.name}>
-              <a
-                href={navLink.href}
-                className="text-sm font-medium text-white transition-colors hover:text-slate-500"
-              >
-                {navLink.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-row gap-5 md:flex md:flex-col">
+          {/* footer links */}
+          <ul className="flex flex-col gap-3">
+            {navLinks.map((navLink) => (
+              <li key={navLink.name}>
+                <a
+                  href={navLink.href}
+                  className="text-sm font-medium text-white transition-colors hover:text-slate-500"
+                >
+                  {navLink.name}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* communicationLinks */}
-        <ul className="flex flex-col gap-3">
-          {communicationLinks.map((communicationLink) => (
-            <li key={communicationLink.name}>
-              <a
-                href={communicationLink.href}
-                className="text-sm font-medium text-white transition-colors hover:text-slate-500"
-              >
-                {communicationLink.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+          {/* communicationLinks */}
+          <ul className="flex flex-col gap-3">
+            {communicationLinks.map((communicationLink) => (
+              <li key={communicationLink.name}>
+                <a
+                  href={communicationLink.href}
+                  className="text-sm font-medium text-white transition-colors hover:text-slate-500"
+                >
+                  {communicationLink.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* input & copyright */}
+        <div className="flex flex-col gap-[8vw]">
+          <div className="flex gap-2">
+            <input
+              type="text"
+              placeholder="Updates in your box..."
+              className="rounded-full bg-white p-3 text-slate-500"
+            />
+            <button className="hover cursor-pointer rounded-full bg-orange-400 px-5 py-3 text-white duration-150 ease-in-out hover:bg-white hover:text-orange-400">
+              Go
+            </button>
+          </div>
+
+          <span className="flex justify-center gap-4">
+            <p>
+              <small className="text-slate-500">
+                &copy; Copyright 2027 All Rights Reserved
+              </small>
+            </p>
+          </span>
+        </div>
       </div>
     </footer>
   );
