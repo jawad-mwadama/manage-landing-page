@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
 ];
 export default function FooterLinks() {
   return (
-    <div className="flex flex-row gap-5 md:flex md:flex-col">
+    <div className="flex flex-row gap-x-8 md:flex">
       {/* footer links */}
       <ul className="flex flex-col gap-3">
         {navLinks.map((navLink) => (
