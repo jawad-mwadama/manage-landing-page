@@ -3,7 +3,7 @@ import avatarAnisha from "../../assets/images/avatar-anisha.png";
 import avatarRichard from "../../assets/images/avatar-richard.png";
 import avatarShanai from "../../assets/images/avatar-shanai.png";
 import Button from "../../ui/Button";
-import TestimonialHeader from "../../ui/TestimonialHeader";
+import TestimonialHeader from "../../ui/TestimonialText/TestimonialHeader";
 
 interface Testimonial {
   id: number;

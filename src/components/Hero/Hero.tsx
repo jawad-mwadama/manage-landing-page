@@ -1,7 +1,7 @@
 // import Button from "../../ui/Button";
 import illustration from "../../assets/images/illustration-intro.svg";
 import Button from "../../ui/Button";
-import Herotext from "../../ui/Herotext";
+import Herotext from "../../ui/HeroText/Herotext";
 // import Herotext from "../../ui/Herotext";
 
 export default function Hero() {

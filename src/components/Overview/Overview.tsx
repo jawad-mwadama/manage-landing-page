@@ -1,4 +1,4 @@
-import OverviewText from "../../ui/OverviewText";
+import OverviewText from "../../ui/OverviewText/OverviewText";
 
 const overView = [
   {
